@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: tt-manage
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: tarena
+Implementation-Vendor-Id: com.tt
+Build-Jdk: 1.8.0_151
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/tt/tt-manage
+Created-By: Maven Integration for Eclipse
+

@@ -16,6 +16,7 @@
 
    <div data-options="region:'west',title:'菜单',split:true" style="width:10%;"></div>
    <div data-options="region:'center',title:'首页'"></div>
+   <div data-options="region:'east',iconCls:'icon-reload',title:'East',split:true" style="width:100px;"></div>
 
 </body>
 

@@ -23,13 +23,11 @@
 
     function getSelectionsIds(){
     	var itemList = $("#itemList");
-    	/*[item,item,item,item]*/
     	var sels = itemList.datagrid("getSelections");
     	var ids = [];
     	for(var i in sels){
     		ids.push(sels[i].id);
     	}
-    	//将数组拼接成串 1,2,3,4,5
     	ids = ids.join(",");
     	return ids;
     }
@@ -63,7 +61,6 @@
         			$("#itemeEditForm").form("load",data);
         			
         			// 加载商品描述
-        			//_data = SysResult.ok(itemDesc)
         			$.getJSON('/item/query/item/desc/'+data.id,function(_data){
         				if(_data.status == 200){
         					//UM.getEditor('itemeEditDescEditor').setContent(_data.data.itemDesc, false);
@@ -137,7 +134,6 @@
         text:'下架',
         iconCls:'icon-remove',
         handler:function(){
-        	//获取选中的ID串中间使用","号分割
         	var ids = getSelectionsIds();
         	if(ids.length == 0){
         		$.messager.alert('提示','未选中商品!');

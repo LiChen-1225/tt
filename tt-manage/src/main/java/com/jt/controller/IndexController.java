@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 	
+	/**
+	 *   通用页面跳转 
+	 */
 	@RequestMapping("/page/{moduleName}")
 	public String module(@PathVariable String moduleName) {
 		
